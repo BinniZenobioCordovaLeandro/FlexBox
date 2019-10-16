@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      align-items: stretch;
+    }
+
+    .flex-container>.item {
+      flex: 1 3 35%;
+      padding: 0% 1%;
+    }
+
+    .flex-container>.img {
+      width: auto;
+      height: 100%;
+    }
+
+    .flex-container>.item>.img {
+      height: 100%;
+    }
+
+    .flex-container>.tittle {
+      color: orange;
+    }
+
+    .flex-container>.article {
+      color: gray;
+    }
+
+    .flex-container>.item>.paragraph {
+      color: gray;
+      font-size: 1.1em;
+    }
+
+    .flex-container>.item>.paragraph.relevant {
+      color: cyan;
+    }
+
+    .header {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      flex-grow: initial;
+      justify-content: center;
+    }
+
+    .button {
+      padding: 5% 10%;
+      background: orange;
+      text-align: center;
+      width: 150px;
+    }
+
+    @media all and (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+
+    @media all and (max-width: 320px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="flex-container header">
+    <div class="flex-container">
+      <img class="img" src="assets/logo.png" alt="Our Tours">
+    </div>
+    <div class="flex-container">
+      <h1 class="tittle">
+        OUR TOURS
+      </h1>
+    </div>
+  </header>
+  <article class="flex-container">
+    <h2 class="article">Lorem ipsum dolor sit arnet, consectetuer adipiscing elit</h2>
+  </article>
+  <article class="flex-container">
+    <div class="item">
+      <img class="img" src="assets/img_3.jpg" alt="">
+    </div>
+    <section class="item">
+      <p class="paragraph relevant">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore
+        magna aliqua. Accumsan sit amet nulla facilisi morbi tempus iaculis urna id. Ipsum suspendisse ultrices gravida
+        dictum fusce ut placerat orci nulla. Sed turpis tincidunt id aliquet risus feugiat. A scelerisque purus semper
+        eget duis at. Ac felis donec et odio pellentesque diam volutpat commodo. Posuere morbi leo urna molestie at
+        elementum eu facilisis. Egestas integer eget aliquet nibh praesent. Vel elit scelerisque mauris pellentesque.
+        Blandit massa enim nec dui nunc mattis enim.</p>
+      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore
+        magna aliqua. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Est velit egestas dui id.
+        Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Lobortis feugiat vivamus at augue. Malesuada
+        fames ac turpis egestas. Nisl rhoncus mattis rhoncus urna neque viverra justo. In ante metus dictum at tempor
+        commodo ullamcorper a. Amet purus gravida quis blandit turpis cursus. Tempus urna et pharetra pharetra massa.
+        Leo
+        urna molestie at elementum eu facilisis sed odio. Sit amet consectetur adipiscing elit ut aliquam purus sit
+        amet.
+        Nibh mauris cursus mattis molestie a iaculis at erat. Purus viverra accumsan in nisl nisi scelerisque eu
+        ultrices.
+        Varius vel pharetra vel turpis nunc.</p>
+      <div class="button">Last Minute Deals</div>
+    </section>
+  </article>
+</body>
+
+</html>

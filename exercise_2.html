@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .flex-container {
+      display: flex;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      justify-content: space-around;
+      flex-flow: row wrap;
+      align-content: flex-start;
+    }
+
+    .flex-container>.item {
+      display: flex;
+      align-items: stretch;
+      flex: 1 3 35%;
+      padding: 1%;
+      margin: 1%;
+      border-style: solid;
+      border: 1%;
+      border-color: black;
+      /* width: 600px; */
+    }
+
+    .flex-container>.img {
+      width: auto;
+      height: 100%;
+    }
+
+    .flex-container>.item>.img {
+      /* height: 100%; */
+      /* width: auto; */
+    }
+
+    .flex-container>.item>.content {
+      padding: 1%;
+      margin: 2%;
+    }
+
+
+    .flex-container>.tittle {
+      color: orange;
+    }
+
+    .flex-container>.article {
+      color: gray;
+    }
+
+    .flex-container>.item>.paragraph {
+      color: gray;
+      font-size: 1.1em;
+    }
+
+    .flex-container>.item>.paragraph .relevant {
+      color: cyan;
+    }
+
+    .header {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      flex-grow: initial;
+      justify-content: center;
+    }
+
+    .button {
+      padding: 5% 10%;
+      background: orange;
+      text-align: center;
+      width: 150px;
+    }
+
+    @media all and (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .flex-container>.item {
+        flex-direction: column;
+      }
+
+      .flex-container>.item>.img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media all and (max-width: 320px) {
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .flex-container>.item {
+        flex-direction: column;
+      }
+
+      .flex-container>.item>.img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="flex-container header">
+    <div class="flex-container">
+      <img class="img" src="assets/logo.png" alt="Our Tours">
+    </div>
+    <div class="flex-container">
+      <h1 class="tittle">
+        OUR TOURS
+      </h1>
+    </div>
+  </header>
+  <article class="flex-container">
+    <h2 class="article">Lorem ipsum dolor sit arnet, consectetuer adipiscing elit</h2>
+  </article>
+  <article class="flex-container">
+    <div class="item">
+      <img class="img" src="assets/person_5.jpg" alt="">
+      <div class="content">
+        <h3 class="title">Adventures</h3>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.</p>
+        <a class="paragraph relevant">READ MORE</a>
+      </div>
+    </div>
+    <div class="item">
+      <img class="img" src="assets/img_6.jpg" alt="">
+      <div class="content">
+        <h3 class="title">Europe Summer Tours</h3>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.</p>
+        <a class="paragraph relevant">READ MORE</a>
+      </div>
+    </div>
+    <div class="item">
+      <img class="img" src="assets/img_2.jpg" alt="">
+      <div class="content">
+        <h3 class="title">Day Trips</h3>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.</p>
+        <a class="paragraph relevant">READ MORE</a>
+      </div>
+    </div>
+    <div class="item">
+      <img class="img" src="assets/img_5.jpg" alt="">
+      <div class="content">
+        <h3 class="title">Sightseeing Tours</h3>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.</p>
+        <a class="paragraph relevant">READ MORE</a>
+      </div>
+    </div>
+    <div class="item">
+      <img class="img" src="assets/img_1.jpg" alt="">
+      <div class="content">
+        <h3 class="title">Budget Tours</h3>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.</p>
+        <a class="paragraph relevant">READ MORE</a>
+      </div>
+    </div>
+    <div class="item">
+      <img class="img" src="assets/img_4.jpg" alt="">
+      <div class="content">
+        <h3 class="title">North America Tours</h3>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.</p>
+        <a class="paragraph relevant">READ MORE</a>
+      </div>
+    </div>
+  </article>
+</body>
+
+</html>
